@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Inventario</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/inventariostyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- Fatima Nava Tinajero -->
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="contenedor-app">
+      <!-- BARRA LATERAL -->
+      <aside class="barra-lateral">
+        <!-- El logotipo ahora te regresa a la página de inicio o dashboard principal -->
+        <a href="index.html" class="contenedor-logo" style="text-decoration: none; color: inherit; display: block;">
+          <img src="img/Marca(Icono).png" alt="Solecitos Logo" class="logo-empresa" />
+          <h2>SOLECITOS</h2>
+          <span>— Boutique —</span>
+        </a>
+        
+        <nav class="menu">
+          <!-- Enlace apuntando al propio archivo actual -->
+          <a href="inventario.html" class="opcion-menu">
+            <img src="img/inventario(icono).png" alt="Inventario" /> INVENTARIO
+          </a>
+          <!-- Enlace modificado para ir a la sección de ventas -->
+          <a href="ventas.html" class="opcion-menu">
+            <img src="img/ventas(icono).png" alt="Ventas" /> VENTAS
+          </a>
+        </nav>
+        <div class="pie-barra-lateral">
+          <p>
+            <i>Organiza hoy,<br />vende mañana ♡</i>
+          </p>
+        </div>
+      </aside>
+
+      <!-- ÁREA DE CONTENIDO PRINCIPAL -->
+      <main class="contenido-principal">
+        <!-- Barra Superior -->
+        <header class="encabezado">
+          <div class="barra-busqueda-superior">
+            <input type="text" placeholder="Buscar producto...">
+          </div>
+          <!-- El icono de perfil ahora te redirige a la pantalla de Login -->
+          <a href="login.html" class="perfil-usuario">
+            <img src="img/cuenta(Icono).png" alt="Usuario">
+          </a>
+        </header>
+
+        <!-- Título de Sección -->
+        <div class="titulo-seccion">
+          <div class="icono-titulo">
+            <img src="img/inventario(Icono-Titulo).png" alt="Inventario Icono">
+          </div>
+          <div>
+            <h1>INVENTARIO</h1>
+            <p>Consulta y administra el stock de tus productos.</p>
+          </div>
+        </div>
+
+        <!-- CONTENEDOR DE TABLA -->
+        <div class="table-card">
+          <table class="footable">
+            <thead>
+              <tr>
+                <th> <img src="img/Nombre(icono-ropa).png" alt="Nombre" /> Nombre ⇅ </th>
+                <th> <img src="img/Unidades(icono).png" alt="Unidades" /> Unidades </th>
+                <th><img src="img/costo(icono).png" alt="Costo" /> Costo ⇅</th>
+                <th> <img src="img/Categoria(icono).png" alt="Categoría" /> Categoría ⇅ </th>
+                <th><img src="img/Estado(icono).png" alt="Estado" /> Estado</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Limas</td>
+                <td class="centro texto-alerta">2</td>
+                <td>$50</td>
+                <td> <span class="categoria cat-desechable">Desechable</span> </td>
+                <td>
+                  <span class="estatus Bajo-Stock">
+                    <img src="img/Casi_sin_Stock.png" alt="" class="estatus-icon" /> Casi Agotado
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Crema</td>
+                <td class="centro texto-bajo">0</td>
+                <td>$75</td>
+                <td><span class="categoria cat-consumo">Consumo</span></td>
+                <td>
+                  <span class="estatus Sin-Stock">
+                    <img src="img/Sin_Stock.png" alt="" class="estatus-icon" /> Sin Stock
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Playeras</td>
+                <td class="centro texto-existencias">10</td>
+                <td>$120</td>
+                <td><span class="categoria cat-producto">Producto</span></td>
+                <td>
+                  <span class="estatus Con-Stock">
+                    <img src="img/Con_Stock.png" alt="" class="estatus-icon" /> En existencia
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Esmaltes Rosa</td>
+                <td class="centro texto-existencias">5</td>
+                <td>$25</td>
+                <td><span class="categoria cat-consumo">Consumo</span></td>
+                <td>
+                  <span class="estatus Con-Stock">
+                    <img src="img/Con_Stock.png" alt="" class="estatus-icon" /> En existencia
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Acetona</td>
+                <td class="centro texto-alerta">2</td>
+                <td>$60</td>
+                <td><span class="categoria cat-consumo">Consumo</span></td>
+                <td>
+                  <span class="estatus Bajo-Stock">
+                    <img src="img/Casi_sin_Stock.png" alt="" class="estatus-icon" /> Casi Agotado
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Uñas acrílicas A</td>
+                <td class="centro texto-existencias">10</td>
+                <td>$125</td>
+                <td> <span class="categoria cat-desechable">Desechable</span> </td>
+                <td>
+                  <span class="estatus Con-Stock">
+                    <img src="img/Con_Stock.png" alt="" class="estatus-icon" /> En existencia
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- CONTENEDOR DE FORMULARIO -->
+        <form class="formulario formulario-inventario" action="#" method="POST">
+          <div class="campo-contenedor">
+            <img src="img/Nombre(Icono-ropa).png" class="icono-campo" />
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe el nombre del Producto" required />
+          </div>
+          <div class="campo-contenedor">
+            <img src="img/Unidades(Icono).png" class="icono-campo" alt="Icono de usuario" />
+            <input class="input-text" type="number" name="unidades" placeholder="Unidades" required />
+          </div>
+          <div class="campo-contenedor">
+            <img src="img/costo(icono).png" class="icono-campo" alt="Icono de usuario" />
+            <input class="input-text" type="number" name="costo" placeholder="Costo" required/>
+          </div>
+          <div class="campo-contenedor">
+            <img src="img/Categoria(icono).png" class="icono-campo" alt="Icono de usuario" />
+            <!-- MENU -->
+            <div class="input-simulado">Categoría</div>
+            <!-- Opciones -->
+            <div class="desplegable-opciones" aria-required="true">
+              <!-- Opción 1 -->
+              <input type="radio" name="categoria" id="unidad-Producto" value="1" required/>
+              <label for="unidad-Producto">Producto</label>
+              <!-- Opción 2 -->
+              <input type="radio" name="categoria" id="unidad-Consumo" value="5" />
+              <label for="unidad-Consumo">Consumo</label>
+              <!-- Opción 3 -->
+              <input type="radio" name="categoria" id="unidad-Desechables" value="10" />
+              <label for="unidad-Desechables">Desechables</label>
+            </div>
+          </div>
+          <!-- Nota: En los inputs numéricos y radios del formulario corregí los atributos 'name' repetidos para que manden bien la información al servidor -->
+          <button type="submit" class="btn-registrar">
+            <img src="img/Registrar(icono).png" alt="Registrar" /> REGISTRAR
+          </button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
