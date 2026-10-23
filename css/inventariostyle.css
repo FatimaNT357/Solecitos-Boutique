@@ -44,14 +44,14 @@ body {
   padding: 0;
 }
 
-/* Estructura del Layout Principal */
+/* Estructura Principal */
 .contenedor-app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* BARRA LATERAL (Base) */
+/* BARRA LATERAL*/
 .barra-lateral {
   background-color: var(--magentaOscuro);
   color: var(--blanco);
@@ -137,7 +137,7 @@ body {
   background-color: var(--casiBlanco);
 }
 
-/* HEADER SUPERIOR */
+/* HEADER  */
 .encabezado {
   display: flex;
   justify-content: flex-end;
@@ -197,7 +197,7 @@ body {
   font-size: 1.4rem;
 }
 
-/* Carta de Tabla / Contenedor */
+/* Carta de Tabla  */
 .table-card,
 .table-container {
   background: var(--blanco);
@@ -256,7 +256,7 @@ table.footable > tbody > tr:last-child > td {
   border-bottom: none;
 }
 
-/* --- CATEGORÍAS (Etiquetas / Badges) --- */
+/* --- CATEGORÍAS --- */
 .categoria {
   padding: 0.4rem 1.2rem;
   border-radius: 1.2rem;
